@@ -1,0 +1,19 @@
+body.home {
+    background-image: url('assets/web-background.png');
+}
+
+body.game {
+    background-image: url('assets/game-background.png');
+}
+
+body.web {
+    background-image: url('assets/web-background.png');
+}
+
+body.art {
+    background-image: url('assets/art-background.png');
+}
+
+body.contact {
+    background-image: url('assets/contact-background.png');
+}
