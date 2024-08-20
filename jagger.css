@@ -3,7 +3,7 @@ body.home {
 }
 
 body.game {
-    background-image: url('assets/home-background.png');
+    background-image: url('assets/game-background.png');
 }
 
 body.web {
@@ -20,8 +20,8 @@ body.about {
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-attachment: fixed;
-    background-size: cover;
+    background-attachment:fixed;
+    background-size:cover;
 }
 
 h1 {
@@ -90,7 +90,7 @@ div.about {
 }
 
 .about-logo {
-    width: 1px;
+    width: 22px;
     height: auto;
 }
 
@@ -101,4 +101,31 @@ div.about {
 footer {
     padding: 1em;
     font-size: small;
+}
+
+.carousel-control-prev-icon {
+    filter:invert(50%);
+}
+
+.carousel-control-next-icon {
+    filter: invert(50%);
+}
+
+.carousel-indicators {
+    filter: invert(25%)
+}
+
+.carousel-item img{
+    width: auto;
+    min-height: 460px;
+    max-height: 500px;
+    object-fit: contain;
+    margin: auto; 
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.carousel-inner {
+    border: 3px solid rgb(50, 50, 50);
 }
