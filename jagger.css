@@ -1,28 +1,89 @@
-body.home {
-    background-image: url('assets/home-background.png');
-}
-
-body.game {
-    background-image: url('assets/game-background.png');
-}
-
-body.web {
-    background-image: url('assets/web-background.png');
-}
-
-body.art {
-    background-image: url('assets/art-background.png');
-}
-
-body.about {
-    background-image: url('assets/about-background.png');
-}
-
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-attachment:fixed;
-    background-size:cover;
+    /* background-attachment:fixed;
+    background-size:cover; */
 }
+
+body.home::before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(assets/home-background.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body.game::before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(assets/game-background.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body.web::before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(assets/web-background.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body.art::before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(assets/art-background.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body.about::before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(assets/about-background.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+  
 
 .container {
     max-width: 1250px;
@@ -103,6 +164,7 @@ p.about {
 
 .profile-image {
     width: 350px;
+    max-width: 100%;
     height: auto;
     border: 3px solid rgb(50, 50, 50);
     margin-bottom: 1em;
@@ -124,9 +186,19 @@ p.about {
 }
 
 footer {
+    position:fixed;
+    bottom:0;
     padding: 1em;
     font-size: small;
     color: rgb(50, 50, 50);
+}
+
+footer.home {
+    position:fixed;
+    bottom:0;
+    padding:0;
+    text-align: center;
+    margin: auto;
 }
 
 .carousel-control-prev-icon {
