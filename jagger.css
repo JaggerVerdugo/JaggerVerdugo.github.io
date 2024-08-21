@@ -1,6 +1,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     /* background-attachment:fixed;
     background-size:cover; */
 }
@@ -8,7 +9,7 @@ body {
 body.home::before {
     content: "";
     display: block;
-    position: fixed;
+    position: fixed; 
     left: 0;
     top: 0;
     width: 100%;
@@ -19,6 +20,7 @@ body.home::before {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
 }
 
 body.game::before {
@@ -111,8 +113,8 @@ p {
 }
 
 a:link, a:visited {
-    color:white;
-    text-decoration: none;
+    color:black;
+    text-decoration: underline;
     
 }
 
@@ -132,6 +134,14 @@ a:hover {
 .layer-full {
     background-color: rgba(255, 255, 255, 0.2);
     position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.full {
+    position:fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -194,6 +204,13 @@ footer {
     color: rgb(50, 50, 50);
 }
 
+.footer-home {
+    position: fixed;
+    bottom:0;
+    width:100%;
+    padding-bottom: 300px;
+}
+
 .carousel-control-prev-icon {
     filter:invert(50%);
 }
@@ -208,7 +225,7 @@ footer {
 
 .carousel-item img{
     width: auto;
-    min-height: 500px;
+    min-height: 390px;
     max-height: 500px;
     object-fit: contain;
     margin: auto; 
@@ -226,8 +243,9 @@ footer {
 .container-home{
     margin: 20px auto;
     width:600px;
-    max-width: 100%;
-    height:auto;
+    /* max-width: 100%; */
+    height:100%;
+    scale: .7;
     
     display:grid;
     
@@ -250,29 +268,28 @@ footer {
     section:nth-child(4) { grid-column: 3 / 6; grid-row: 2; z-index: 2;}
     section:nth-child(5) { grid-column: 1 / 4; grid-row: 1; z-index: 0;}
     section:nth-child(6) { grid-column: 1 / 4; grid-row: 1; z-index: 3;}
-
-    .box{
-      
-      /* padding:20px; */
-      /* border-radius:10px; */
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      /* font-size:40px; */
-      /* font-family:sans-serif; */
-    }
   
-  }
+}
 
-  .button-img {
+.button-img {
     margin-left:16px;
-  }
+}
 
-  .head-img {
+.head-img {
     margin-top: 16px;
-  }
+}
 
-  .head-front-img {
+.head-front-img {
     margin-top:235px;
     pointer-events: none;
-  }
+    position:fixed;
+}
+
+.navbar-light {
+    position: absolute;
+    top:0;
+}
+
+.home-padding {
+    height:720px;
+}
