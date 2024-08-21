@@ -122,6 +122,10 @@ a:hover {
     color: lightgray;
 }
 
+.nav-link:link, nav-link:visited {
+    text-decoration: none;
+}
+
 .page-image {
     width: 100%;
     height: auto;
@@ -287,15 +291,30 @@ footer {
     /* position:fixed; */
 }
 
-.navbar-light {
-    position: absolute;
+.navbar-dark {
+    position: fixed;
     top:0;
+    background-color: rgb(50, 50, 50, 0.3);
+    padding:0;
+    margin: .5rem 1rem;
+    border-radius: 10px;
+    z-index: 15;
 }
 
-.navbar-toggle {
+.navbar-dark .navbar-toggler {
+    border-color: transparent;
     
 }
 
+.navbar-nav {
+    padding:.5rem 1rem;
+}
+
+button:focus {
+    outline:none;
+}
+
+/* For big displays */
 @media (min-width:2000px) {
     .container-home {
         scale:1;
@@ -306,6 +325,7 @@ footer {
     }
 }
 
+/* For mobile displays */
 @media (max-width:600px) {
     .container-home {
         scale:.5;
