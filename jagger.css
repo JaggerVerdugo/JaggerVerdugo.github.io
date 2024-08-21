@@ -88,9 +88,9 @@ body.about::before {
 }
   
 
-/* .container {
+.container {
     max-width: 1250px;
-} */
+}
 
 h1 {
     font-weight: bold;
@@ -208,7 +208,9 @@ footer {
     position: fixed;
     bottom:0;
     width:100%;
-    padding-bottom: 300px;
+    padding-bottom: 310px;
+    z-index: -9;
+    /* pointer-events: none; */
 }
 
 .carousel-control-prev-icon {
@@ -282,7 +284,7 @@ footer {
 .head-front-img {
     margin-top:235px;
     pointer-events: none;
-    position:fixed;
+    /* position:fixed; */
 }
 
 .navbar-light {
@@ -290,6 +292,27 @@ footer {
     top:0;
 }
 
-.home-padding {
-    height:720px;
+.navbar-toggle {
+    
+}
+
+@media (min-width:2000px) {
+    .container-home {
+        scale:1;
+    }
+
+    .footer-home {
+        padding-bottom: 500px;
+    }
+}
+
+@media (max-width:600px) {
+    .container-home {
+        scale:.5;
+        width:415px;
+    }
+
+    .footer-home {
+        padding-bottom:180px;
+    }
 }
