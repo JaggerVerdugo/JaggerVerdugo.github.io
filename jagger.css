@@ -221,6 +221,8 @@ p.about {
 
 .row {
     margin-top: 40px;
+    animation-name:revealRight;
+    animation-duration: 1s;
 }
 
 footer {
@@ -279,6 +281,9 @@ footer {
     grid-column-gap: 210px;
     grid-row-gap: 210px;
 
+    animation-name: revealUp;
+    animation-duration: 1s;
+
     section:nth-child(1) { grid-column: 1 / 4; grid-row: 1; z-index: 1;}
     section:nth-child(2) { grid-column: 3 / 6; grid-row: 1; z-index: 1;}
     section:nth-child(3) { grid-column: 1 / 4; grid-row: 2; z-index: 2;}
@@ -322,6 +327,8 @@ footer {
     margin: .5rem 1rem;
     border-radius: 10px;
     z-index: 10;
+    animation-name: revealRight;
+    animation-duration: 1s;
 }
 
 .navbar-dark .navbar-toggler {
@@ -357,5 +364,31 @@ button:focus {
 
     .footer-home {
         padding-bottom:120px;
+    }
+
+    .container-home {
+        width:unset;
+    }
+}
+
+@keyframes revealRight {
+    from {
+        opacity: 0;
+        transform: translate(-80%,0%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes revealUp {
+    from {
+        opacity: 0;
+        transform: translate(0%,80%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0,0);
     }
 }
