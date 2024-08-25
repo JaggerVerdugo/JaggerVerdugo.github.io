@@ -19,7 +19,6 @@ body.home::before {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
 }
 
 body.game::before {
@@ -123,27 +122,9 @@ h1 {
     font-family: Poppins;
     font-weight:bold;
     margin: 40px;
-}
 
-h1.home {
-    margin: 20px
-    /* text-shadow: 0px 0px 50px; */
-
-}
-
-div.home {
-    /* float:right; */
-
-    /* background-color: rgba(255, 255, 255, 0.4); */
-    background-color: rgb(50, 50, 50, 0.5);
-    color: lightgrey;
-    /* padding: 3em 2em 3em 2em; */
-
-    /* shine side, shade side, shine top */
-    /* box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5),0px 25px 0px rgba(150, 150, 150, 0.4),inset 0px -5px 10px rgba(255, 255, 255, 0.2); */
-    
-    border-radius: 10px;
-    margin: 10px;
+    animation-name: reveal;
+    animation-duration: 2s;
 }
 
 h3 {
@@ -205,8 +186,10 @@ a:hover {
 
 .row {
     margin-top: 40px;
-    animation-name:revealRight;
-    animation-duration: 1s;
+    
+
+    animation-name:reveal;
+    animation-duration: 2s;
 }
 
 /* Buttons ----------------------------------------------------------- */
@@ -365,8 +348,6 @@ footer {
     bottom:0;
     padding: 1em;
     font-size: small;
-    color: rgb(50, 50, 50);
-    
 }
 
 .footer-home {
@@ -383,7 +364,7 @@ footer {
 .button-img {
     margin-left:16px;
     transition: filter .10s ease-in-out, margin-top .05s ease-in-out;
-    /* backface-visibility: hidden; */
+    
     
 }
 
@@ -436,6 +417,17 @@ footer {
     }
 }
 
+@keyframes revealLeft {
+    from {
+        opacity: 0;
+        transform: translate(10%,0%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
 @keyframes revealRight {
     from {
         opacity: 0;
@@ -455,5 +447,14 @@ footer {
     to {
         opacity: 1;
         transform: translate(0,0);
+    }
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
