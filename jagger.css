@@ -91,6 +91,9 @@ body.about::before {
   
 .container {
     max-width: 1250px;
+
+    animation-name:revealUp;
+    animation-duration: 1s;
 }
 
 .container-home{
@@ -106,7 +109,7 @@ body.about::before {
     grid-column-gap: 210px;
     grid-row-gap: 210px;
 
-    animation-name: revealUp;
+    animation-name: revealUpHome;
     animation-duration: 1s;
 
     section:nth-child(1) { grid-column: 1 / 4; grid-row: 1; z-index: 1;}
@@ -136,6 +139,11 @@ p {
     line-height: 2em;
     margin-top: 1em;
     vertical-align: middle;
+}
+
+hr {
+    animation-name:lineExtend;
+    animation-duration:3s;
 }
 
 .subtitle {
@@ -177,19 +185,18 @@ a:hover {
     padding: 3em 2em 3em 2em;
 
     /* shine side, shade side, shine top */
-    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5),0px 25px 0px rgba(150, 150, 150, 0.4),inset 0px -5px 10px rgba(255, 255, 255, 0.2);
-    
-    /* border: 2px solid; */
+    box-shadow: 0 10px 10px -5px rgba(255, 255, 255, 0.5),0 25px 0 rgba(76, 76, 76, 0.4),inset 0 -15px 10px -5px rgba(201, 201, 201, 0.3),0px 0px 25px rgba(0, 0, 0, 0.4);
+    /* border-top: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid; */
     border-radius: 10px;
-    margin: 10px;  
+    margin: 10px;
+
+    border: 2px sol
 }
 
 .row {
     margin-top: 40px;
-    
-
-    animation-name:reveal;
-    animation-duration: 2s;
 }
 
 /* Buttons ----------------------------------------------------------- */
@@ -265,8 +272,6 @@ button:focus {
 
 div.about {
     text-align: center;
-    animation-name:revealUp;
-    animation-duration: 1s;
 }
 
 p.about {
@@ -362,7 +367,7 @@ footer {
 /* Homepage Images/Buttons ------------------------------------------------------------ */
 
 .button-img {
-    margin-left:16px;
+    margin-left:1em;
     transition: filter .10s ease-in-out, margin-top .05s ease-in-out;
     
     
@@ -374,11 +379,11 @@ footer {
 }
 
 .button-img:active {
-    margin-top: 15px;
+    margin-top: 1em;
 }
 
 .head-img {
-    margin-top: 16px;
+    margin-top: 1em;
     z-index: 5;
 }
 
@@ -431,7 +436,7 @@ footer {
 @keyframes revealRight {
     from {
         opacity: 0;
-        transform: translate(-50%,0%);
+        transform: translate(-100%,0%);
     }
     to {
         opacity: 1;
@@ -442,7 +447,18 @@ footer {
 @keyframes revealUp {
     from {
         opacity: 0;
-        transform: translate(0%,80%);
+        transform: translate(0%,5%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes revealUpHome {
+    from {
+        opacity: 0;
+        transform: translate(0%,100%);
     }
     to {
         opacity: 1;
@@ -456,5 +472,14 @@ footer {
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes lineExtend {
+    from {
+        max-width: 0em;
+    }
+    to {
+        max-width: 20em;
     }
 }
