@@ -1,6 +1,6 @@
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Poppins, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: black;
 }
 
@@ -120,8 +120,30 @@ body.about::before {
 }
 
 h1 {
-    font-weight: bold;
+    font-family: Poppins;
+    font-weight:bold;
     margin: 40px;
+}
+
+h1.home {
+    margin: 20px
+    /* text-shadow: 0px 0px 50px; */
+
+}
+
+div.home {
+    /* float:right; */
+
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    background-color: rgb(50, 50, 50, 0.5);
+    color: lightgrey;
+    /* padding: 3em 2em 3em 2em; */
+
+    /* shine side, shade side, shine top */
+    /* box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5),0px 25px 0px rgba(150, 150, 150, 0.4),inset 0px -5px 10px rgba(255, 255, 255, 0.2); */
+    
+    border-radius: 10px;
+    margin: 10px;
 }
 
 h3 {
@@ -176,6 +198,7 @@ a:hover {
     /* shine side, shade side, shine top */
     box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5),0px 25px 0px rgba(150, 150, 150, 0.4),inset 0px -5px 10px rgba(255, 255, 255, 0.2);
     
+    /* border: 2px solid; */
     border-radius: 10px;
     margin: 10px;  
 }
