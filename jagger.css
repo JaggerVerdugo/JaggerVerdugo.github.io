@@ -209,10 +209,10 @@ a:hover {
     max-width: 100%;
 }
 
-.top {
+/* .top {
     
     width:100%;
-}
+} */
 
 .page-image {
     width: 100%;
@@ -451,7 +451,7 @@ footer {
 @media (max-width:768px) {
     .container-home {
         scale:0.4;
-        width:415px;
+        width:unset;
     }
 
     .layer {
