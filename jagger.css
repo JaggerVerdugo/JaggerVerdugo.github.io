@@ -127,7 +127,7 @@ h1 {
     margin: 40px;
 
     animation-name: reveal;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
 }
 
 h3 {
@@ -447,6 +447,17 @@ footer {
     }
 }
 
+/* For short displays */
+@media (max-height:675px) {
+    .container-home {
+        scale: 0.5;
+    }
+
+    .footer-home {
+        padding-bottom:190px;
+    }
+}
+
 /* For mobile displays */
 @media (max-width:768px) {
     .container-home {
@@ -472,6 +483,8 @@ footer {
         display:block;
     }
 }
+
+
 
 @keyframes revealLeft {
     from {
