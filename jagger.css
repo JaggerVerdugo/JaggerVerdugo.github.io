@@ -90,7 +90,7 @@ body.about::before {
 }
   
 .container {
-    max-width: 1350px;
+    max-width: 1300px;
 
     animation-name:revealUp;
     animation-duration: 1s;
@@ -198,8 +198,8 @@ a:hover {
     border-right: 2px solid;
     border-left: 2px solid; */
     border-radius: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 1em;
+    margin-right: 1em;
 
     border: 2px solid;
 }
