@@ -222,6 +222,10 @@ a:hover {
     border-radius: 10px;
 }
 
+.page-icon {
+    margin-right: 1em;
+}
+
 .tag {
     float:right;
     font-size: 0.5em;
@@ -469,6 +473,12 @@ footer {
         margin-left: 0.2em;
         margin-right: 0.2em;
         padding: 3em 1em 3em 1em;
+    }
+
+    .page-icon {
+        margin-right: 0;
+        margin-bottom: 1em;
+        display:block;
     }
 
     .footer-home {
