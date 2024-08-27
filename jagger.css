@@ -185,6 +185,8 @@ a:hover {
     height: 100%;
 }
 
+
+
 .layer {
     background-color: rgba(255, 255, 255, 0.4);
     padding: 3em 2em 3em 2em;
@@ -205,6 +207,11 @@ a:hover {
 .row {
     margin-top: 40px;
     max-width: 100%;
+}
+
+.top {
+    
+    width:100%;
 }
 
 .page-image {
@@ -238,6 +245,7 @@ a:hover {
 
     /* shine side, shade side, shine top */
     box-shadow: 0px 5px 5px -5px rgba(255, 255, 255, 0.7),0px 5px 0px rgba(0, 0, 0, 0.4),inset 0px -5px 5px -5px rgba(255, 255, 255, 0.7);
+    /* transition: box-shadow 0s; */
 }
 
 .btn-outline-dark img {
@@ -257,6 +265,11 @@ a:hover {
     box-shadow: unset;
     margin-top: 5px;
 }
+
+button:focus {
+    outline: none;
+}
+
 
 /* Navigation --------------------------------------------------------- */
 
