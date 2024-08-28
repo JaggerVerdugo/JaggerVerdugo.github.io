@@ -127,7 +127,12 @@ h1 {
     margin: 40px;
 
     animation-name: reveal;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
+}
+
+h1 img {
+    animation-name: reveal;
+    animation-duration: 1s;
 }
 
 h3 {
@@ -165,14 +170,13 @@ hr {
     height:40px;
 }
 
-/* a also affects about.html links */
-a:link, a:visited {
-    color:black;
+.external:link, .external:visited {
+    color:rgb(78, 78, 78);
     text-decoration: underline;
     transition: color .10s ease-in-out; 
 }
 
-a:hover {
+.external:hover {
     color: white;
     
 }
@@ -185,8 +189,6 @@ a:hover {
     height: 100%;
 }
 
-
-
 .layer {
     background-color: rgba(255, 255, 255, 0.4);
     padding: 3em 2em 3em 2em;
@@ -194,13 +196,9 @@ a:hover {
     /* shine side, shade side, shine top */
     /* box-shadow: 0 10px 10px -5px rgba(255, 255, 255, 0.5),0 25px 0 rgba(76, 76, 76, 0.4),inset 0 -15px 10px -5px rgba(201, 201, 201, 0.3),0px 0px 25px rgba(0, 0, 0, 0.4); */
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
-    /* border-top: 2px solid;
-    border-right: 2px solid;
-    border-left: 2px solid; */
     border-radius: 10px;
     margin-left: 1em;
     margin-right: 1em;
-
     border: 2px solid;
 }
 
@@ -277,30 +275,26 @@ button:focus {
 
 /* Navigation --------------------------------------------------------- */
 
-.navbar-dark {
-    position: fixed;
+.navbar {
+    position:fixed;
     top:0;
-    background-color: rgba(50, 50, 50, 0.7);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
     padding:0;
     margin: .5rem 1rem;
-    border-radius: 10px;
-    z-index: 10;
+
     animation-name: revealRight;
     animation-duration: 1s;
 }
 
-.navbar-dark .navbar-toggler {
-    border-color: transparent;
-    
+.navbar .navbar-toggler {
+    box-shadow: none;
+    border: none;
 }
 
 .navbar-nav {
     padding:.5rem 0 .5rem 1rem;
-    /* margin-right:-1em; */
-}
-
-.nav-link:link, nav-link:visited {
-    text-decoration: none;
 }
 
 /* About ------------------------------------------------------------------ */
@@ -317,6 +311,8 @@ p.about {
 .aboutLink:link, .aboutLink:visited {
     color:black;
     text-decoration: none;
+
+    transition: color .10s ease-in-out;
 }
 
 .aboutLink:hover {
@@ -430,7 +426,7 @@ footer {
     z-index: 5;
 }
 
-/* Media Queries & Animations ------------------------------------------------------- */
+/* Media Queries ------------------------------------------------------- */
 
 /* For big displays */
 @media (min-width:2000px) {
@@ -492,9 +488,14 @@ footer {
     .tag-mobile {
         display:block;
     }
+
+    .sideways-mobile {
+        writing-mode: vertical-rl;
+        transform: rotate(-180deg)
+    }
 }
 
-
+/* Animations ---------------------------------------------------------------- */
 
 @keyframes revealLeft {
     from {

@@ -5,40 +5,29 @@
     <title>Jagger | Game Development</title>
     <meta name="Description" content="Jagger's work in game development.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="jagger.css" rel="stylesheet" type="text/css">
-    
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-
 </head>
+
 <body class="game">
 
-    <nav class="navbar navbar-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <nav class="navbar" data-bs-theme="dark">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="game.html">Game Development<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="web.html">Web Development</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="art.html">Art</a>
-            </li>
-            <li class="nav-item">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="game.html">Game Development</a>
+                <a class="nav-link" href="web.html">Web Development</a>
+                <a class="nav-link" href="art.html">Art</a>
                 <a class="nav-link" href="about.html">About Me</a>
-              </li>
-          </ul>
+            </div>
         </div>
     </nav>
 
@@ -79,7 +68,7 @@
                 <h3>Enchatment<span class="tag">School Project</span></h3>
                 <p class="subtitle"><i>May 2024</i><span class="line"></span>View on:&emsp;<a href="https://jaggerdane.itch.io/enchatment" target="_blank"><button type="button" class="btn btn-outline-dark btn-sm"><img src="assets/itchio-logo-black.png" class="text-logo"></button></a></p>
                 <p>Enchatment is a short, multiplayer third-person shooter with three unique environments, enriched by an interactable companion powered by generative AI. Players are given four different spells that they can utilize by spending Mana Points (MP) to defeat the various enemies and bosses found in the game. I made this in a team of 6 for our Gaming Capstone class at Arizona State University. In addition to designing and programming the UI, I worked on programming the progression flags, level traversal, checkpoints, respawn system, and actor replication for multiplayer.</p>
-                <p>Created with <a href="https://www.unrealengine.com" target="_blank">Unreal Engine 5</a>. </p>
+                <p>Created with <a href="https://www.unrealengine.com" target="_blank" class="external">Unreal Engine 5</a>. </p>
             </div>
         </div>
         
@@ -94,7 +83,7 @@
                 
                 <p class="subtitle"><i>December 2022</i><span class="line"></span>View on:&emsp;<a href="https://jaggerdane.itch.io/toy-car-football" target="_blank"><button type="button" class="btn btn-outline-dark btn-sm"><img src="assets/itchio-logo-black.png" class="text-logo"></button></a></p>
                 <p>Toy Car Football is an arcade-style game where 2 players control a toy car to bump a ball into the opposing player's goal to score points. I made this game for my Game Engine Development class at Arizona State University. The engine was made in class using the MonoGame framework, and I tweaked some of the physics code to make a soccer/football game.</p>
-                <p>Created with a custom engine using <a href="https://monogame.net/" target="_blank">Monogame</a> (Microsoft XNA Framework).</p>
+                <p>Created with a custom engine using <a href="https://monogame.net/" target="_blank" class="external">Monogame</a> (Microsoft XNA Framework).</p>
             </div>
         </div>
         
@@ -109,7 +98,7 @@
             
                 <p class="subtitle"><i>December 2021</i><span class="line"></span>View on:&emsp;<a href="https://jaggerdane.itch.io/hooked" target="_blank"><button type="button" class="btn btn-outline-dark btn-sm"><img src="assets/itchio-logo-black.png" class="text-logo"></button></a></p>
                 <p>Combining precise platforming and fast-paced enemy encounters, HOOKED is a short, first-person 3D platformer that pits the main character, Budd, against dangerous environments equipped with nothing but his trusty grappling hook. HOOKED is a game I made with a team for our Game Development II class at Arizona State University. I was in charge of UI design/programming, level design for the second level, and other general scripting.</p>
-                <p>Created with <a href="https://unity.com/" target="_blank">Unity</a>.</p>
+                <p>Created with <a href="https://unity.com/" target="_blank" class="external">Unity</a>.</p>
             </div>
         </div>
         
@@ -124,7 +113,7 @@
                 
                 <p class="subtitle"><i>April 2021</i><span class="line"></span>View on:&emsp;<a href="https://jaggerdane.itch.io/mouse-brigade" target="_blank"><button type="button" class="btn btn-outline-dark btn-sm"><img src="assets/itchio-logo-black.png" class="text-logo"></button></a></p>
                 <p>Mouse Brigade is a short, 2D side-scrolling game I made as a final project for my Game Development class at Arizona State University. Try to find and defeat the boss while collecting permanent upgrades along the way!</p>
-                <p>Created with <a href="https://gamemaker.io" target="_blank">GameMaker</a>.</p>
+                <p>Created with <a href="https://gamemaker.io" target="_blank" class="external">GameMaker</a>.</p>
             </div>
         </div>
         <br>
@@ -132,9 +121,7 @@
 
     <footer>© 2024 Jagger Verdugo</footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+</body>
 </html>
