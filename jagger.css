@@ -497,6 +497,10 @@ footer {
         writing-mode: vertical-rl;
         transform: rotate(-180deg)
     }
+
+    .navbar {
+        margin: .5rem .5rem
+    }
 }
 
 /* Animations ---------------------------------------------------------------- */
