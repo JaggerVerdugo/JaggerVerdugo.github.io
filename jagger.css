@@ -135,7 +135,8 @@ h1 img {
     animation-duration: 1s;
 }
 
-h3 {
+h2 {
+    font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 4px;
 }
@@ -222,6 +223,8 @@ hr {
 
 .page-icon {
     margin-right: 1em;
+    image-rendering: optimizeSpeed;
+    
 }
 
 .tag {
@@ -279,10 +282,11 @@ button:focus {
     position:fixed;
     top:0;
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     padding:0;
-    margin: .5rem 1rem;
+    margin: 1rem 1rem;
 
     animation-name: revealRight;
     animation-duration: 1s;
