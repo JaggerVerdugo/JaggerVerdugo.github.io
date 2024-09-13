@@ -494,8 +494,9 @@ footer {
     }
 
     .sideways-mobile {
-        writing-mode: vertical-rl;
-        transform: rotate(-180deg)
+        writing-mode:vertical-rl;
+        text-orientation: sideways-right;
+        transform: rotate(180deg)
     }
 
     .navbar {
