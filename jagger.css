@@ -125,9 +125,11 @@ h1 {
     font-family: Poppins;
     font-weight:bold;
     margin: 40px;
+    
 
     animation-name: reveal;
     animation-duration: 2s;
+    text-shadow: 0px -2px 0 #515151;
 }
 
 h1 img {
