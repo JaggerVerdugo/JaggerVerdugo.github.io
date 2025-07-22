@@ -150,18 +150,18 @@ p {
 }
 
 hr {
-    max-width:20em;
-    border-width:2px;
-    background-color:rgba(0, 0, 0, 0.5);
-    margin:15px 0 10px 0;
+    max-width: 20em;
+    border-width: 0.2rem;
+    margin: 15px 0 10px 0;
+    opacity: 1.0;
 
-    animation-name:lineExtend;
-    animation-duration:3s;
+    animation-name: lineExtend;
+    animation-duration: 3s;
 }
 
 .subtitle {
     display : flex;
-    line-height:normal;
+    line-height: normal;
     margin-top: 10px;
     font-size: 14px;
     align-items:center;
