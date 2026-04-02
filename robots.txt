@@ -1,0 +1,7 @@
+User-agent: Googlebot-Image
+Disallow: /assets/head-front.png
+Disallow: /assets/head-back.png
+Disallow: /assets/button-blue.png
+Disallow: /assets/button-green.png
+Disallow: /assets/button-pink.png
+Disallow: /assets/button-purple.png
